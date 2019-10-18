@@ -1,0 +1,9 @@
+$footerH: 120px;
+.m-footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+  height: $footerH;
+  background: linear-gradient(141deg,rgba(96,96,96,1) 0%,rgba(54,54,54,1) 100%);
+  // background: transparent;
+}

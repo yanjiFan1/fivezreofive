@@ -1,0 +1,22 @@
+$headerH: 48px;
+.m-header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+  height: $headerH;
+  background: transparent;
+  .m-header-ul {
+  	width: 100%;
+		height: 100%;
+		line-height: $headerH;
+		margin: 0 auto;
+		li {
+			min-width: 80px;
+			margin-right: 20px;
+			text-align: center;
+			display: inline-block;
+		}
+	}
+}
+
