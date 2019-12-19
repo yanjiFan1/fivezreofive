@@ -29,6 +29,7 @@
       1{{userMenus}}2
     </div>
     {{userInfos}}
+    <div @click="onChangeValue">我要改变以上的值</div>
   </div>
 </template>
 
@@ -69,8 +70,16 @@ export default {
       // })
     },
 
+    // 改变值
+    onChangeValue() {
+      console.log(this.userInfos)
+      let userInfos = this.userInfos
+      userInfos.id = parseInt(this.userInfos.id) + 1
+      this.changeValue(userInfos)
+    },
+
     // 试试vuex
-    // ...mapMutations(['increment']),
+    ...mapMutations(['changeValue']),
     ...mapActions(['getUserInfo'])
     
   }

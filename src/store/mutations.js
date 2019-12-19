@@ -6,5 +6,11 @@ export default {
     // 获取用户信息
     [type.getUserInfo](state, payload) {
         state.userInfo = payload
-    }
+    },
+
+    // 更改值
+    [type.changeValue](state, payload) {
+        state.userInfo = payload
+    },
+    
 }

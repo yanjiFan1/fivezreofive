@@ -1,5 +1,9 @@
 <template>
   <div>
+    2{{userInfos1}}3
+    <div>
+      22{{userMenus1}}33
+    </div>
     <h2>关于指令v-for</h2>
     <ol>
       <li v-for="todo in todos">
@@ -21,8 +25,6 @@
         :per-pages="perPages">
       </pages-tab>
     </div>
-
-
     <dialogs-tab v-show="dialogBool">
       <div slot="dialogsHeader"><span v-text="dialogsTitle"></span></div>
       <div slot="dialogsContain">
@@ -30,6 +32,7 @@
         <p>这里是弹窗具体内容-房产信息</p>
       </div>
     </dialogs-tab>
+    
   </div>
 </template>
 
@@ -37,6 +40,7 @@
 import {store} from '../vuex/store.js'
 import dialogsTab from '../components/dialogs.vue'
 import pagesTab from '../components/pages.vue'
+import { mapState, mapGetters } from 'vuex'
 export default {
   name: 'indexP',
   data () {
@@ -54,6 +58,12 @@ export default {
       count : 200, //总记录数
       items : []
     }
+  },
+  computed: {
+    ...mapState({
+      userInfos1: state => state.userInfo
+    }),
+    ...mapGetters({ userMenus1: 'obtainUserInfo' })
   },
   methods:{
     eClick(){
