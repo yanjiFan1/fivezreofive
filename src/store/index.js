@@ -8,7 +8,7 @@ import createLogger from 'vuex/dist/logger'
 Vue.use(Vuex)
 
 const state = {
-  
+  userInfo: null
 }
 
 export default new Vuex.Store({

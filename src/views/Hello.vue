@@ -26,7 +26,7 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
     <div>
-      <!-- 1{{userMenus}}2 -->
+      1{{userMenus}}2
     </div>
     {{userInfos}}
   </div>
@@ -50,7 +50,7 @@ export default {
     // ...mapGetters([
     //   'obtainUserInfo'
     // ])
-    ...mapGetters({ userMenus: 'obtainUserInfo' }),
+    ...mapGetters({ userMenus: 'obtainUserInfo' })
   },
 
   created() {
@@ -59,8 +59,7 @@ export default {
   },
 
   mounted() {
-    console.log(this.userInfos)
-    console.log(this.userInfos)
+    
   },
 
   methods: {
