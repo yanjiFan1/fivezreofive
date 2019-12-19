@@ -1,2 +1,1 @@
-export const GET_NEWSLIST = 'GET_NEWSLIST'
-
+export const getUserInfo = 'getUserInfo' // 获取用户信息

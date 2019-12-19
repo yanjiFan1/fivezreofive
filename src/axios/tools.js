@@ -1,5 +1,5 @@
 /**
- * Created by hzzhangzhang1 on 2018/7/30.
+ * Created by yanji on 2018/7/30.
  * http通用工具函数
  */
 import axios from 'axios';
